@@ -7,11 +7,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Parishkaaram Public School',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Aspiring for excellence',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://parishkaaram.in',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -64,29 +64,36 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Home',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/schoolLogo.png',
         },
         items: [
-          {
+         /* {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
-          },
+          },*/
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'docSidebar',
+            sidebarId: 'objectiveSidebar',
+            position: 'left',
+            label: 'Curriculum Objectives',
+          },
+          // {to: '/curriculum-objectives', label: 'Curriculum Objectives', position: 'left'},
+          /*{
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
-          },
+          },*/
         ],
       },
       footer: {
         style: 'dark',
-        links: [
+        /*links: [
           {
             title: 'Docs',
             items: [
@@ -126,8 +133,8 @@ const config = {
               },
             ],
           },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        ],*/
+        copyright: `Copyright © ${new Date().getFullYear()} Parishkaaram Public School`,
       },
       prism: {
         theme: lightCodeTheme,
