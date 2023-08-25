@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Established in 2015, Parishkaaram Public School is supported and nurtured by
-          various accomplished professional from the fields of education, medicine and engineering.
+          various accomplished professionals from the fields of education, medicine and engineering.
       </>
     ),
       link: '/know-your-school'
