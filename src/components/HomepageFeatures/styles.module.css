@@ -12,11 +12,8 @@
   border-style: solid;
 }
 
-.title:hover {
-  cursor: pointer;
-  color: white;
-  background-color: #425ce0
-}
+
+
 
 
 .featureSvg {
