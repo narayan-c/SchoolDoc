@@ -33,21 +33,32 @@ const FeatureList: FeatureItem[] = [
       link: '/events-activities'
   },
   {
+    title: 'Achievements',
+    Svg: require('@site/static/img/achievement.svg').default,
+    description: (
+        <>
+          Our students consistently excel in academics, sports, and extracurricular activities, showcasing their
+          dedication to excellence and their commitment to personal growth.
+        </>
+    ),
+    link: '/achievements'
+  },
+  {
     title: 'Resources',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
-      <>
-        From the vast ocean of knowledge, that is Internet, we have curated a list of resources that will help students, teachers
+        <>
+          From the vast ocean of knowledge, that is Internet, we have curated a list of resources that will help students, teachers
           and parents alike in their journey of learning.
-      </>
+        </>
     ),
-      link: '/resources'
-  },
+    link: '/resources'
+  }
 ];
 
 function Feature({title, Svg, description, link}: FeatureItem) {
   return (
-    <div className={[clsx('col col--4'), styles.featureItem].join(' ')}>
+    <div className={[clsx('col col--3'), styles.featureItem].join(' ')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
