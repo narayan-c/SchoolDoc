@@ -19,6 +19,8 @@ export default function QRCodeGen() {
             url = url + "vpa="+encodeURIComponent('parishkaaramschool@ybl');
             url = url + "&name="+encodeURIComponent('Parishkaaram Public School');
             url = url + "&amount="+amount+'.00';
+            // set image to empty first.
+            setImage('');
             const response = await fetch(url);
             const responseText = await response.text();
             setImage(responseText);
