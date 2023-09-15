@@ -1,0 +1,46 @@
+import { useState } from 'react';
+
+export default function QRCodeGen() {
+    var qrStyle = {
+        width: 400
+    }
+    const [amount, setAmount] = useState('');
+    const [image, setImage] = useState(<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                <path d="M1 1h7v7h-7zM12 1h1v4h-1zM15 1h1v1h1v-1h1v2h-1v3h-1v-1h-1v-1h1v-1h-2v-1h1zM20 1h2v1h-2zM24 1h1v1h-1zM26 1h1v1h-1zM32 1h2v1h-2zM35 1h7v7h-7zM2 2v5h5v-5zM19 2h1v1h2v-1h2v1h2v1h-4v1h4v-1h3v1h-2v1h-1v2h-1v-2h-2v1h-1v1h-1v-2h-1v2h-1v-2h-1v-1h1zM28 2h4v3h-1v1h-1v2h-1v-1h-1v-1h1v-1h1v-1h1v-1h-3zM36 2v5h5v-5zM3 3h3v3h-3zM9 3h1v1h1v1h-1v3h1v-1h1v2h-1v1h-1v-1h-1zM37 3h3v3h-3zM20 4v1h1v-1zM13 5h1v3h-1zM32 5h2v1h-2zM15 6h1v3h1v-3h1v3h1v1h-3v2h1v-1h3v1h-2v1h1v1h-2v-1h-3v1h1v1h-5v-1h3v-1h-4v-1h1v-1h1v1h3v-1h-3v-1h1v-1h2v-1h1zM31 6h1v2h-1zM23 7h1v1h1v1h1v1h-1v1h-1v3h2v1h-3v-1h-2v-1h1v-2h1v-1h1v-1h-2v-1h1zM27 7h1v1h1v1h-1v1h-1zM33 7h1v1h-1zM1 9h1v1h1v-1h5v1h-1v1h1v1h-4v-1h-1v1h-1v-1h-1zM20 9h1v1h1v1h-2zM30 9h4v1h1v-1h5v1h-1v3h2v1h1v1h-2v-1h-2v-2h-1v1h-1v-2h1v-1h-1v1h-1v1h-2v-1h-1v-1h-1v2h-1v1h-2v-3h2zM5 10v1h1v-1zM8 10h2v1h-2zM40 10h2v1h-2zM25 11h2v1h-1v1h-1zM1 12h1v1h1v-1h1v1h2v4h2v-1h-1v-1h1v-1h-1v-1h2v2h1v2h1v1h2v1h-3v1h-5v1h1v1h-1v2h1v1h-2v-1h-1v-1h1v-1h-1v-1h-1v-3h2v1h-1v1h1v-1h2v-1h-2v-1h-1v-1h2v-1h-1v-1h-1v1h-2zM20 12h1v1h-1zM41 12h1v1h-1zM26 13h2v1h-2zM30 13h1v1h-1zM33 13h1v1h-1zM16 14h1v1h-1zM19 14h2v1h-2zM29 14h1v1h-1zM31 14h2v1h-2zM34 14h4v1h1v2h-2v-1h-1v1h-1v-2h-1zM15 15h1v2h-3v-1h2zM17 15h1v2h-1zM22 15h1v2h-1zM27 15h2v1h-1v1h-1zM33 15h1v2h1v1h1v2h-1v-1h-2zM11 16h1v1h-1zM19 16h1v1h-1zM29 16h1v1h-1zM18 17h1v1h2v1h-2v1h1v1h-2zM23 17h4v1h-2v1h-1v-1h-1zM30 17h1v1h-1zM39 17h2v1h1v1h-2v-1h-1zM7 18v1h2v-1zM14 18h2v2h-1v-1h-1zM22 18h1v2h3v1h1v2h2v2h2v1h3v1h-3v1h-1v1h-1v1h-1v-2h-1v-1h-1v-1h1v-1h1v-1h-2v1h-1v-2h1v-1h-1v-1h-4v-1h1zM27 18h1v1h-1zM29 18h1v2h-1v1h-2v-1h1v-1h1zM31 18h1v3h-1zM37 18h1v1h-1zM13 19h1v2h1v1h-2v-1h-2v2h-1v-3h3zM38 19h1v2h2v-1h1v3h-1v-1h-3zM16 20h1v1h-1zM1 21h1v1h1v1h-1v1h-1zM7 21h2v2h1v3h5v1h-1v1h-1v1h-2v1h-2v2h-2v-1h1v-1h-1v-1h2v-1h-2v1h-1v1h1v1h-2v1h1v1h3v1h-6v-2h1v-1h-2v3h-1v-4h1v-2h-1v-3h1v1h2v1h-1v2h1v1h1v-1h-1v-1h1v-2h1v-1h2v-1h-2v-2h1v1h1v-1h-1zM20 21h1v1h1v1h-2v1h-2v1h-1v-2h2v-1h1zM29 21h1v1h1v2h-1v-1h-1zM12 22h1v2h-1zM16 22h1v1h-1zM23 22h2v1h-1v3h1v1h-2v2h-1v-1h-1v-1h-1v2h-1v-2h-2v-1h1v-1h1v1h2v-1h1v1h1v-1h-1v-2h1zM32 22h2v2h-1v-1h-1zM35 22h3v1h1v2h-3v-1h1v-1h-2zM14 23h1v2h-2v-1h1zM20 24h1v1h-1zM32 24h1v1h-1zM40 24h1v1h1v1h-3v-1h1zM34 25h1v1h-1zM7 26v1h2v-1zM28 26v1h2v-1zM35 26h3v2h1v1h-2v-1h-1v1h-2v-1h1zM11 27v1h1v-1zM16 27h1v1h-1zM25 27h1v1h-1zM15 28h1v1h-1zM24 28h1v1h-1zM14 29h1v1h-1zM16 29h3v1h2v1h-2v1h-1v1h1v-1h4v-1h1v3h-1v-1h-2v1h2v3h-1v1h1v3h-1v-1h-1v-1h-1v-1h-1v-1h1v-1h1v-1h-1v-1h-2v2h-1v1h-2v1h1v3h-2v1h-5v-1h2v-1h1v1h1v-2h1v-1h-1v-1h1v-1h1v-1h1v-1h1v-1h-1v1h-1v-2h2v-1h-1zM21 29h1v1h-1zM23 29h1v1h-1zM25 29h2v1h-2zM30 29h1v1h-1zM39 29h1v1h-1zM41 29h1v2h-2v-1h1zM24 30h1v1h-1zM29 30h1v1h1v-1h2v1h-1v2h-1v-1h-2v1h-1v-2h1zM35 30h3v1h-2v2h1v-1h1v-1h1v2h2v-1h1v3h-2v-1h-2v2h1v1h-1v1h-1v1h-1v-1h-2v1h-1v-3h-3v-1h1v-1h2v-3h1v2h1zM10 31h1v1h2v-1h2v1h-1v2h-1v-1h-1v2h-1v1h-1v-1h-1v-1h1zM26 31h1v1h-1zM25 32h1v1h-1zM26 33h1v1h-1zM30 33h1v1h-1zM27 34h1v1h1v1h1v1h-2v-1h-2v1h-1v-2h2zM29 34h1v1h-1zM34 34v3h3v-3zM1 35h7v7h-7zM12 35h1v2h-1zM19 35h1v1h-1zM35 35h1v1h-1zM39 35h1v1h-1zM2 36v5h5v-5zM9 36h1v2h3v1h-3v1h-1zM40 36h1v1h1v2h-2v1h-1v-1h-1v-1h1v-1h1zM3 37h3v3h-3zM26 37h2v1h-2zM30 37h1v1h-1zM17 38h2v1h1v1h-1v1h-2v-1h1v-1h-1zM24 38h1v1h-1zM28 38h2v1h-1v1h1v1h1v1h-2v-1h-1zM31 38h1v2h-2v-1h1zM25 39h2v1h-2zM35 39h1v1h-1zM37 39h1v1h1v1h1v1h-2v-1h-2v-1h1zM24 40h1v1h-1zM33 40h2v1h-2zM40 40h1v1h-1zM23 41h1v1h-1zM25 41h2v1h-2zM32 41h1v1h-1zM35 41h1v1h-1z"/>
+            </svg>);
+    function generateQR() {
+        genQR(amount);
+        // Now call API end point to get the image and then change the image calling setImage method.
+    }
+    async function genQR(amount) {
+        const text = "Some text here...";
+        try {
+            let url = "https://upiqr.in/api/qr?";
+            url = url + "vpa="+encodeURIComponent('parishkaaramschool@ybl');
+            url = url + "&name="+encodeURIComponent('Parishkaaram Public School');
+            url = url + "&amount="+amount+'.00';
+            const response = await fetch(url);
+            const responseText = await response.text();
+            setImage(responseText);
+        } catch (error) {
+            setImage("Request error!");
+        }
+    }
+    return (
+        <>
+            <div className="board-row">
+                <input
+                    type="text"
+                    onChange={(e)=> setAmount(e.target.value)}
+                />
+            </div>
+            <div className="board-row">
+                <button className="qr-show" onClick={generateQR}>Show QR Code</button>
+            </div>
+    <div className="board-row" style={qrStyle} dangerouslySetInnerHTML={{__html: image}} >
+    </div>
+        </>
+    );
+}
+
+<QRCodeGen/>
