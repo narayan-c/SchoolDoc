@@ -86,7 +86,7 @@ export default function FeeDetailsPage() {
         <>
             <Container style={container} ref={ref} id="mycontainer" fluid={true}>
                 <Row style={rowstyle}>
-                    <Col style={studentListArea} class="col--8">
+                    <Col style={studentListArea} className="col--8">
                         <StudentListComponent SRUpdateHandler={(srno,name,classname) => {setSRNo(srno); setStudentname(name); setClassname(classname);}}></StudentListComponent>
                     </Col>
                     <Col style={qrStyle3}>
