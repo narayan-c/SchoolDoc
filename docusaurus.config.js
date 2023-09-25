@@ -6,6 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  plugins: [require.resolve('./webpack5Plugin')],
   title: 'Parishkaaram Public School',
   tagline: 'Aspiring for excellence',
   favicon: 'img/favicon.ico',

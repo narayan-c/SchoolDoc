@@ -15,14 +15,21 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "react-iframe": "~1.8.5",
     "@docusaurus/core": "2.4.1",
     "@docusaurus/preset-classic": "2.4.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@material-ui/core": "~4.12.4",
     "@mdx-js/react": "^1.6.22",
+    "@mui/material": "^5.14.10",
     "clsx": "^1.2.1",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-bootstrap": "~2.8.0",
+    "react-data-table-component": "^7.5.4",
+    "react-date-picker": "^10.5.0",
+    "react-dom": "^17.0.2",
+    "react-iframe": "~1.8.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.4.1",
