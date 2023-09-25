@@ -4,9 +4,6 @@ import React, {useEffect, useState} from "react";
 const paymentDetailURL = 'https://pps-api.onrender.com/getStudents/getpaymentdetails?';
 
 export default function PaymentDetailComponent(props) {
-    const divScroll = {
-        overflowY: scroll
-    }
     const [paymentDetails, setPaymentDetails] = useState([]);
     async function getPaymentDetails() {
         try {
