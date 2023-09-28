@@ -5,6 +5,8 @@ const paymentDetailURL = 'https://pps-api.onrender.com/getStudents/getpaymentdet
 
 export default function PaymentDetailComponent(props) {
     const [paymentDetails, setPaymentDetails] = useState([]);
+    // create a state to track total payment done so far
+    const [totalPayment, setTotalPayment] = useState(0);
     async function getPaymentDetails() {
         try {
             // set studentList to empty first.
@@ -15,7 +17,15 @@ export default function PaymentDetailComponent(props) {
             if (props.srno) {
                 const response = await fetch(paymentDetailURL + `srno=${props.srno}`);
                 const responseText = await response.text();
-                setPaymentDetails(JSON.parse(responseText) as any[]);
+                let tmpPaymentDetails = JSON.parse(responseText) as any[];
+                // iterate over payment details and add total payment
+                let totalPayment = 0;
+                tmpPaymentDetails.forEach((paymentDetail) => {
+                    totalPayment += parseInt(paymentDetail.paymentamount);
+                });
+                // set total payment
+                setTotalPayment(totalPayment);
+                setPaymentDetails(tmpPaymentDetails);
                 console.log(JSON.parse(responseText));
             }
         } catch (error) {
@@ -39,6 +49,8 @@ export default function PaymentDetailComponent(props) {
                 </div>
             ))
             }
+            <hr/>
+            <b>Total Payment = {totalPayment}</b>
         </div>
     )
 
