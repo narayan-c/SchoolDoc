@@ -63,7 +63,7 @@ export default function FeeDetailComponent(props) {
         getFeeDetails();
     },[props.srno]);
     return(
-        <div>
+        <div style={{overflowY: "scroll"}}>
             <b>Fee Details for {props.name}({props.classname})</b><br/>
             {feeDetails.map((feeDetail, index) =>
                 <div>
