@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 
-const feeDetailUrl = 'https://pps-api.onrender.com/getStudents/showfeedetails?srno=';
+const feeDetailUrl = 'https://pps-api.onrender.com/students/showfeedetails?srno=';
 
 export default function FeeDetailComponent(props) {
     const [feeDetails, setFeeDetails] = useState([]);

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import DataTable from 'react-data-table-component';
 
 
-const url = 'https://pps-api.onrender.com/getStudents/getallstudents';
+const url = 'https://pps-api.onrender.com/students/getallstudents';
 
 function FilterComponent(props: { onClear: () => void, onFilter: (e) => void, filterText: string }) {
     return null;

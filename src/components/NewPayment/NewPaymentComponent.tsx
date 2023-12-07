@@ -3,7 +3,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import Modal from '@mui/material/Modal';
 
 
-const paymentURL = 'https://pps-api.onrender.com/getStudents/addpaymentdetails?';
+const paymentURL = 'https://pps-api.onrender.com/students/addpaymentdetails?';
 
 export default function NewPaymentComponent(props) {
     const [qrModalOpen, setQRModalOpen] = React.useState(false);

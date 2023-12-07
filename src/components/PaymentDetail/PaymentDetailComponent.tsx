@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 
-const paymentDetailURL = 'https://pps-api.onrender.com/getStudents/getpaymentdetails?';
+const paymentDetailURL = 'https://pps-api.onrender.com/students/getpaymentdetails?';
 
 export default function PaymentDetailComponent(props) {
     const [paymentDetails, setPaymentDetails] = useState([]);
