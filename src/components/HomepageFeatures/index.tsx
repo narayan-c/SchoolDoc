@@ -43,6 +43,16 @@ const FeatureList: FeatureItem[] = [
     ),
     link: '/achievements'
   },
+    {
+        title: 'Session 2024-25',
+        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        description: (
+            <>
+                Academic Calendar, Books List and other Useful Information
+            </>
+        ),
+        link: '/session-2024-25'
+    },
   {
     title: 'Resources',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
