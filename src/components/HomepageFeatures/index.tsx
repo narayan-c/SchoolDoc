@@ -48,7 +48,7 @@ const FeatureList: FeatureItem[] = [
         Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
         description: (
             <>
-                Academic Calendar, Books List and other Useful Information
+                Academic calendar, Books list and other useful information
             </>
         ),
         link: '/session-2024-25'
